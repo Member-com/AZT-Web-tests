@@ -1,0 +1,88 @@
+:root{
+    --clr-green: hsl(75, 94%, 57%);
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-700: hsl(0, 0%, 20%);
+    --clr-800: hsl(0, 0%, 12%);
+    --clr-900: hsl(0, 0%, 8%);
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+p, h1, a{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: var(--clr-white);
+  text-align: center;
+  font-size: 0.9em;
+}
+body{
+    background-color: var(--clr-900);
+    overflow: auto;
+}
+.container{
+    background-color: var(--clr-800);
+    border-radius: 0.5rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 4.5%;
+    padding: 1%;
+}
+.profile{
+    display: block;
+    margin: auto;
+    border-radius: 70%;
+    width: 40%;
+}
+.location{
+    color: var(--clr-green);
+    font-weight: var(--fw-600);
+    position: relative;
+    top: -0.6em;
+}
+.name{
+    font-weight: var(--fw-700);
+    font-size: 1.5em;
+}
+.btn{
+    background-color: var(--clr-700);
+    margin: 1em;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    font-weight: var(--fw-600);
+    display: grid ;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: var(--clr-green);
+    color: var(--clr-700);
+}
+.attribution{
+    text-indent: -999999999999999999999999px;
+}
+@media screen and (min-width: 375px) {
+    .profile{
+    display: block;
+    margin: auto;
+    border-radius: 90%;
+    }
+    .container{
+        width: 80%;
+        margin: auto;
+        margin-top: 23.5%;
+        height: 10%;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .profile{
+    display: block;
+    margin: auto;
+    border-radius: 90%;
+    }
+    .container{
+        width: 30%;
+        margin: auto;
+        margin-top: 3.5%;
+    }
+}
